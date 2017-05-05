@@ -14,7 +14,8 @@ gem 'devise-bootstrap-views'
 gem 'certified'
 gem 'figaro'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem 'country_select'
+gem 'countries', :require => 'countries/global'
+gem "subdivision_select"
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
