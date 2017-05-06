@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170505181809) do
+ActiveRecord::Schema.define(version: 20170506013749) do
 
   create_table "employee_profiles", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "first_name"
@@ -23,14 +23,17 @@ ActiveRecord::Schema.define(version: 20170505181809) do
     t.string   "city"
     t.string   "province"
     t.string   "country"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
     t.integer  "user_id"
     t.string   "telephone"
     t.string   "postal_code"
     t.string   "nationality"
     t.string   "father_name"
     t.string   "mother_name"
+    t.string   "spouse_name"
+    t.string   "gender"
+    t.string   "relation_status"
     t.index ["user_id"], name: "index_employee_profiles_on_user_id", using: :btree
   end
 
